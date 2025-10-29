@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <title>Climate Action Pledge</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <img src="assets/logo.png" alt="Climate Action Logo" class="logo" />
+    <div class="hero-content">
+      <h1>Join the Climate Action Pledge </h1>  
+      <p>Small actions by many people create a powerful collective impact.</p>
+      <button id="take-pledge-btn">Take the Pledge</button>
+    </div>
+  </header>
+
+  <section class="kpis">
+    <div>🎯 Target Pledges: <strong>1,000,000</strong></div>
+    <div>✅ Achieved: <strong id="kpi-achieved">0</strong></div>
+    <div>🎓 Students: <strong id="kpi-students">0</strong></div>
+    <div>💼 Professionals: <strong id="kpi-working">0</strong></div>
+  </section>
+
+  <section id="why" class="why-section">
+    <h2>Why Take Climate Action?</h2>
+    <p>
+      Every step we take toward sustainability — from reducing waste to conserving energy —
+      brings us closer to a greener planet. Let’s unite to make change visible.
+    </p>
+  </section>
+
+  <section id="pledge-section" class="pledge-form">
+    <h2>Take Your Climate Action Pledge</h2>
+    <form id="pledgeForm">
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email (kept private)" required />
+      <input type="tel" id="mobile" placeholder="Mobile Number (kept private)" required />
+      <select id="state" required>
+        <option value="">Select Your State</option>
+        <option>Kerala</option>
+        <option>Tamil Nadu</option>
+        <option>Karnataka</option>
+        <option>Maharashtra</option>
+        <option>Delhi</option>
+      </select>
+      <select id="profile" required>
+        <option value="">Select Profile Type</option>
+        <option value="student">Student</option>
+        <option value="working">Working Professional</option>
+        <option value="other">Other</option>
+      </select>
+      <fieldset>
+        <legend>Commit to these actions:</legend>
+        <label><input type="checkbox" name="commitment" value="reduce-plastic" /> Reduce plastic use</label>
+        <label><input type="checkbox" name="commitment" value="plant-trees" /> Plant more trees</label>
+        <label><input type="checkbox" name="commitment" value="save-energy" /> Save energy at home</label>
+      </fieldset>
+      <p class="privacy-note">
+        🔒 Your email and mobile number are used only for validation and will never be shown publicly.
+      </p>
+      <button type="submit" class="btn-submit">Submit Pledge</button>
+    </form>
+  </section>
+
+  <section id="certificate-section" class="certificate hidden"></section>
+
+  <section class="pledge-wall">
+    <h2>🌱 Public Pledge Wall</h2>
+    <table id="pledgeTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Date</th>
+          <th>State</th>
+          <th>Profile</th>
+          <th>Love for Planet</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>© 2025 Climate Action Pledge | Together for a sustainable future.</p>
+  </footer>
+  <!-- html2canvas library for downloading certificate -->
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script src="scripts/app.js"></script>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>

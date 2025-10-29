@@ -1,0 +1,172 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4fff4;
+  color: #222;
+  margin: 0;
+  line-height: 1.6;
+}
+h1, h2 { 
+  text-align: center; 
+  color: #2e7d32;
+ }
+section {
+   padding: 40px 20px;
+   }
+.hero { 
+    background: url('../assets/hero-bg.jpg') center/cover no-repeat;
+  /*background: linear-gradient(to right, #388e3c, #66bb6a); */
+  color: white; 
+  padding: 100px 20px; 
+  text-align: center; 
+  position: relative;
+}
+.hero button { 
+  margin-top: 20px; 
+  background: white; 
+  color: #2e7d32; 
+  border: none; 
+  padding: 12px 24px;
+   border-radius: 8px; 
+   cursor: pointer; 
+   font-size: 1rem; 
+   transition: 0.3s; 
+  }
+
+  
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(177, 230, 180, 0.6); /* green overlay */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.logo {
+  width: 120px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 3;
+}
+
+/* Section background example */
+.why-section {
+  background: url('../assets/section-bg.jpg') center/cover no-repeat;
+  background-blend-mode: lighten;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 12px;
+}
+.why-section p {
+  color: #ffffff; /* paragraph text white */
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* improves readability */
+}
+
+.hero button:hover {
+   background: #c8e6c9; 
+  }
+.kpis { 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-around;
+   background: #e8f5e9; 
+   padding: 20px; 
+   text-align: center; 
+   font-weight: bold; 
+  }
+.pledge-form form { 
+  display: flex; 
+  flex-direction: column;
+   max-width: 400px; 
+   margin: auto; gap: 12px;
+   }
+.pledge-form input, .pledge-form select {
+   padding: 10px;
+    border: 1px solid #bbb; 
+    border-radius: 6px;
+   }
+fieldset { 
+  border: 1px solid #a5d6a7;
+   border-radius: 8px;
+    padding: 10px;
+   }
+.btn-submit { 
+  background: #2e7d32; 
+  color: white; 
+  padding: 12px;
+   border: none; 
+   border-radius: 6px; 
+   cursor: pointer;
+   }
+.btn-submit:hover {
+   background: #388e3c; 
+  }
+.privacy-note {
+   font-size: 0.85rem; 
+   color: #555; 
+   text-align: center; 
+  }
+.certificate {
+   text-align: center;
+    background: #e8f5e9; 
+    border-radius: 12px; 
+    margin: 20px auto; 
+    padding: 20px;
+     max-width: 400px; 
+     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+     }
+.hidden { 
+  display: none;
+ }
+.pledge-wall table {
+   width: 90%; 
+   margin: auto; 
+   border-collapse: collapse; 
+  }
+.pledge-wall th, .pledge-wall td { 
+  border: 1px solid #a5d6a7;
+   padding: 10px; 
+   text-align: center; 
+  }
+.pledge-wall th { 
+  background: #c8e6c9;
+ }
+footer {
+   background: #2e7d32; 
+   color: white; 
+   text-align: center; 
+   padding: 15px; 
+   font-size: 0.9rem;
+   }
+.cert-buttons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.cert-buttons button {
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cert-buttons button:hover {
+  background: #43a047;
+}
+@media (max-width: 600px) { .kpis { flex-direction: column; gap: 8px; } }
