@@ -170,3 +170,23 @@ footer {
   background: #43a047;
 }
 @media (max-width: 600px) { .kpis { flex-direction: column; gap: 8px; } }
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+  }
+
+  header img {
+    width: 60px;        /* smaller logo on mobile */
+    margin-bottom: 5px;
+  }
+
+  header h1 {
+    font-size: 1.3rem;  /* smaller text */
+    color: white;       /* make sure visible on green bg */
+  }
+}
+
+
